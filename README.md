@@ -129,6 +129,16 @@ The plugin exposes the following API endpoints:
     -   `props`: The props associated with the snapshot.
     -   `html`: The HTML content of the snapshot.
 
+## Diagnosing
+
+### Server Status
+
+After configuring the plugin, you can check if the snapshot server at the host app is running by visiting the following URL in your browser:
+
+[http://localhost:5174/@snapshot-api/version](http://localhost:5174/@snapshot-api/version)
+
+If the server is running correctly, you should see a version number displayed.
+
 ## License
 
 This project is licensed under the MIT License.
