@@ -32,6 +32,8 @@ export function snapshotPlugin(): Plugin {
         name: 'snapshot-plugin',
         configureServer(_server) {
             server = _server
+            const snapshotDir = path.resolve(server.config.root, '.snapshots')
+            console.log(chalk.blue(`[snapshot-plugin] Storing snapshots in: ${snapshotDir}`))
 
             server.middlewares.use('/@snapshot-api', async (req, res, next) => {
                 if (!req.url) {
