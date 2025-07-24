@@ -1,0 +1,32 @@
+{
+    "name": "vite-plugin-snapshot",
+    "version": "1.0.0",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "git": "git add . && git commit -m \"Bump version\" && git push",
+        "bump": "pnpm version patch",
+        "npmjs": "pnpm publish",
+        "release": "run-s -c git bump npmjs",
+        "dev": "echo 'This is a Vite plugin, not a standalone app. Use it in a Vite project.'",
+        "build": "tsc"
+    },
+    "keywords": [
+        "vite",
+        "plugin",
+        "woby",
+        "snapshot",
+        "testing"
+    ],
+    "author": "Cline",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^22.13.1",
+        "vite": "^6.1.0",
+        "typescript": "^5.8.3"
+    },
+    "peerDependencies": {},
+    "dependencies": {
+        "chalk": "^5.4.1"
+    }
+}
