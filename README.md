@@ -131,6 +131,10 @@ The plugin exposes the following API endpoints:
 
 ## Diagnosing
 
+### Snapshot Folder Location
+
+The plugin stores snapshots in a `.snapshots` directory at the root of your project. When the Vite development server starts, the exact physical path to this directory is logged to the console for your convenience.
+
 ### Server Status
 
 After configuring the plugin, you can check if the snapshot server at the host app is running by visiting the following URL in your browser:
