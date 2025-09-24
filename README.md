@@ -2,6 +2,8 @@
 
 A Vite plugin for snapshot testing.
 
+Repository: https://github.com/missbjs/vite-plugin-snapshot
+
 ## Features
 
 -   **Zero-config setup:** Add the plugin to your Vite config and you're ready to go.
