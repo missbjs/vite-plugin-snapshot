@@ -20,7 +20,7 @@
         "snapshot",
         "testing"
     ],
-    "author": "Cline",
+    "author": "Wong Chi Chong",
     "license": "MIT",
     "devDependencies": {
         "@types/node": "^22.13.1",
