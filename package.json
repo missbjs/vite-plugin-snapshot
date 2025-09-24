@@ -4,10 +4,12 @@
     "main": "index.js",
     "type": "module",
     "scripts": {
-        "git": "git add . && git commit -m \"Bump version\" && git push",
+        "run this alone, then commit": "",
+        "git": "git-cliff > CHANGELOG.md && git-commit-m",
         "bump": "pnpm version patch",
+        "push": "git push",
+        "commit": "pnpm bump && pnpm push",
         "npmjs": "pnpm publish",
-        "release": "run-s -c git bump npmjs",
         "dev": "echo 'This is a Vite plugin, not a standalone app. Use it in a Vite project.'",
         "build": "tsc"
     },
@@ -22,11 +24,11 @@
     "license": "MIT",
     "devDependencies": {
         "@types/node": "^22.13.1",
-        "vite": "^6.1.0",
-        "typescript": "^5.8.3"
+        "typescript": "^5.8.3",
+        "vite": "^6.1.0"
     },
-    "peerDependencies": {},
     "dependencies": {
-        "chalk": "^5.4.1"
+        "chalk": "^5.4.1",
+        "vite-plugin-snapshot": "link:"
     }
 }
